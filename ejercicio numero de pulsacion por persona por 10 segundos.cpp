@@ -22,6 +22,6 @@ int main()
 	{
 		cout<<"Dato invalido"<<endl;
 	}
-	cout<<"pulsaciones por cada 10 segunda es: "<<pulsaciones<<endl;
+	cout<<"El numero de pulsaciones por persona por cada 10 segundos es: "<<pulsaciones<<endl;
 	return 0;
 }
