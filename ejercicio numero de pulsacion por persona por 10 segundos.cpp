@@ -8,7 +8,7 @@ int main()
 	string sexo;
 	cout<<"Bienvenido al programa"<<endl;
 	int edad, pulsaciones;
-	cout<<"Ingrese su genero: ";
+	cout<<"\nIngrese su genero: ";
 	cin>>sexo;
 	cout<<"Ingrese su edad actual: ";
 	cin>>edad;
@@ -23,6 +23,9 @@ int main()
 	{
 		cout<<"Dato invalido"<<endl;
 	}
+	cout<<"\nDatos obtenidos"<<endl;
+	cout<<"\nGenero: "<<sexo<<endl;
+	cout<<"Edad: "<<edad<<endl;
 	cout<<"El numero de pulsaciones por persona por cada 10 segundos es: "<<pulsaciones<<endl;
 	return 0;
 }
