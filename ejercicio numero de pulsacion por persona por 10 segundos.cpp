@@ -6,6 +6,7 @@ using namespace std;
 int main()
 {
 	string sexo;
+	cout<<"Bienvenido al programa"<<endl;
 	int edad, pulsaciones;
 	cout<<"Ingrese su genero: ";
 	cin>>sexo;
