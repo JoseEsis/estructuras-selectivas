@@ -4,6 +4,14 @@
 
 using namespace std; 
 
+double IndiceDeMasaCorporal(double peso, double altura)
+{
+	
+	double IMC;
+	IMC=peso/pow(altura,2);
+	return IMC;
+}
+
 int main()
 {
 	cout<<"\nBienvenido al programa"<<endl;
@@ -30,7 +38,7 @@ int main()
 	{
 		cout<<"Dato invalido"<<endl;
 	}
-	imc=peso/pow(altura,2);
+	imc==IndiceDeMasaCorporal(peso,altura);
 	
 	cout<<"\nDatos obtenidos";
 	cout<<"\nGenero: "<<genero<<endl;
