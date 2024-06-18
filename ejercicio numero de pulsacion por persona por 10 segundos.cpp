@@ -1,21 +1,28 @@
 #include<iostream>
 #include<string>
+#include<cmath>
 
 using namespace std; 
 
 int main()
 {
-	string sexo;
-	cout<<"Bienvenido al programa"<<endl;
+	cout<<"\nBienvenido al programa"<<endl;
+	string genero;
 	int edad, pulsaciones;
+	float imc, peso, altura;	
 	cout<<"\nIngrese su genero: ";
-	cin>>sexo;
+	cin>>genero;
 	cout<<"Ingrese su edad actual: ";
 	cin>>edad;
-	if(sexo=="Femenina")
+	cout<<"Ingrese su peso (kg): ";
+	cin>>peso;
+	cout<<"Ingrese su altura (m): ";
+	cin>>altura;
+	if(genero=="Femenina")
 	{
 		pulsaciones=(220-edad)/10.;
-	} else if(sexo=="Masculino")
+	
+	} else if(genero=="Masculino")
 	{
 		pulsaciones=(210-edad)/10.;
 	}
@@ -23,9 +30,41 @@ int main()
 	{
 		cout<<"Dato invalido"<<endl;
 	}
-	cout<<"\nDatos obtenidos"<<endl;
-	cout<<"\nGenero: "<<sexo<<endl;
+	imc=peso/pow(altura,2);
+	
+	cout<<"\nDatos obtenidos";
+	cout<<"\nGenero: "<<genero<<endl;
 	cout<<"Edad: "<<edad<<endl;
-	cout<<"El numero de pulsaciones por persona por cada 10 segundos es: "<<pulsaciones<<endl;
+	cout<<"Indice de Masa corporal: "<<imc<<endl;
+	cout<<"El numero de pulsaciones por cada 10 segundos es: "<<pulsaciones<<endl;
+	cout<<"\nObservaciones: "<<endl;
+		if(imc<18.5)
+	{
+		cout<<"Usted esta con bajo peso";
+	}
+	else
+	{
+		if(imc<=18.5 and imc <=24.9)
+		{
+			cout<<"Usted esta con peso normal";
+
+		}
+		else
+		{
+			if(imc<=25 and imc<=29.9)
+			{
+				cout<<"Usted esta con sobrepeso";
+
+			}
+			else
+			{
+				if(imc>=30)
+				{
+					cout<<"Usted esta  con obesidad";
+
+				}
+			}
+		}
+	}
 	return 0;
 }
