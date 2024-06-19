@@ -18,7 +18,7 @@ int main()
 	string genero;
 	int edad, pulsaciones;
 	float imc, peso, altura;	
-	cout<<"\nIngrese su genero: ";
+	cout<<"\nIngrese su genero(Masculino/Femenino): ";
 	cin>>genero;
 	cout<<"Ingrese su edad actual: ";
 	cin>>edad;
