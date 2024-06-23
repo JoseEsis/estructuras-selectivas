@@ -14,6 +14,7 @@ double IndiceDeMasaCorporal(double peso, double altura)
 
 int main()
 {
+	cout<<"hola";
 	cout<<"\nBienvenido al programa"<<endl;
 	string genero;
 	int edad, pulsaciones;
